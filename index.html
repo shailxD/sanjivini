@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
+    <meta name="keywords" content="web design, html, css, js" />
+    <title>Sanjivini</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="header__nav"> 
+        <a href="#">
+          <img 
+            class="header__img" 
+            src="/darklogo.png" 
+            data-src-dark="/logo.png" 
+            alt="AiReCode"
+          >
+        </a>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="header__link" href="#service">Service</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+        </ul>
+        <ul class="header__menu2">
+          <li class="header__theme-toggle-container">
+            <button aria-label="theme-toggle btn" id="theme-toggle-dark" class="header__moon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+              </svg>
+            </button>
+            <button aria-label="theme-toggle btn" id="theme-toggle-light" class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+              </svg>
+            </button>
+          </li>
+          <li class="header__line"></li>
+          <li>
+              <a class="header__getstart btn" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="login-wrapper">
+      <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-form">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-form">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forget Password?</a>
+          </div>
+          <button type="submit" class="btnlog">Login</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-form">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" required>
+            <label>Username</label>
+          </div>
+          <div class="input-form">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-form">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox">I agree to terms & conditions</label>
+          </div>
+          <button type="submit" class="btnlog">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account?
+              <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <main>
+      <section class="hero container">
+        <div class="hero_container">
+          <div class="hero_part1 hero_content1">
+            <h2 class="hero_subheading">The Expert Health Care You Want</h2>
+            <p class="hero_subdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, vitae ab officia non officiis.</p>
+          </div>
+          <div class="hero_part2 hero_content2">
+            <h2 class="hero_subheading">Richard Wickham</h2>
+            <p class="hero_subdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sit officia, labore, dicta ratione, odit quisquam repellendus esse doloribus possimus omnis facere! Harum magnam necessitatibus voluptatem dolore doloribus, esse deleniti.</p>
+          </div>
+          <div class="hero_part3 hero_image1">
+            <img class="hero__img" src="light_hero_doc.png" data-src-dark="dark_hero_doc.png" alt="Doc Image">
+          </div>
+          <div class="hero_part4 hero_content3">
+            <div class="hero_part4_wrapper">
+              <h1 class="hero_heading">It's How Medicine Should be</h1>
+              <div class="hero_heading_location">
+                <a class="hero_location" href="#">Location</a>
+                <p class="hero_address">1770 Park Street, XYZ, India</p>
+              </div>
+              <p class="hero_heading_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque, dicta sed a modi eveniet asperiores sapiente inventore alias nisi, ipsum atque dignissimos. Tenetur porro, labore repudiandae dicta similique sequi?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ &copy; Sanjivini, 2023 ~</h3>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
