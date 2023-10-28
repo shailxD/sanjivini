@@ -1,0 +1,68 @@
+.appointment{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.appointment-wrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr 1.8fr;
+    grid-template-areas: 
+    'content1 content2 image2'
+    'image1 content2 image2';
+    place-items: center;
+    grid-gap: 2rem;
+}
+
+.appointment-heading{
+    grid-area: content1;
+    justify-self: left;
+    align-self: flex-start;
+    margin-top: 2rem;
+}
+
+.appointment-img1{
+    grid-area: image1;
+    margin: 0 2rem 0 2rem;
+}
+
+.appointment-description{
+    grid-area: content2;
+    justify-self: left;
+    align-self: flex-start;
+    margin-top: 2rem;
+}
+
+.appointment-img2{
+    grid-area: image2;
+}
+
+.appointment-heading h2{
+    font-size: var(--size-6xl);
+}
+
+.appointment-description p{
+    font-size: var(--size-xl);
+}
+
+.appointment-btn{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.appointment-btn p{
+    font-size: var(--size-xl);
+}
+
+.appointment-btn a{
+    font-size: var(--size-xl);
+}
+
+#appointBG{
+    color: var(--clr-bluelight);
+    background-color: var(--clr-lightbtn);
+    border-radius: 2rem;
+    padding: 1.5rem;
+}

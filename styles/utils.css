@@ -22,7 +22,7 @@
     text-decoration: none;
     /* letter-spacing: -0.05em; */
     background-color: var(--clr-lightbtn);
-    color: var(--clr-dark);
+    color: var(--clr-bluelight);
     padding: 0.5em 1.5em;
     border-radius: 6px;
     box-shadow: 0 10px 20px var(--clr-lightbtn50), 0 6px 6px var(--clr-lightbtn50), 0 0 100px -10px var(--clr-lightbtn);

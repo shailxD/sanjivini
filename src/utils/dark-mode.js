@@ -4,10 +4,14 @@ const darkMode = () => {
   const headerImg = document.querySelector('.header__img');
   const heroImg = document.querySelector('.hero__img');
   const heroImgMedical = document.querySelector('.hero_medicalcross');
+  const consultationImg = document.querySelector('.consultation-img');
+  const appointmentImg = document.querySelector('.appointmentIMG2');
   const theme = localStorage.getItem('theme');
   const originalSrc = headerImg.getAttribute('src');
   const herooriginalSrc = heroImg.getAttribute('src');
   const heroMedicaloriginalSrc = heroImgMedical.getAttribute('src');
+  const consultationImgoriginalSrc = consultationImg.getAttribute('src');
+  const appointmentImgoriginalSrc = appointmentImg.getAttribute('src');
 
   // Function to toggle the theme
   const toggleTheme = () => {
@@ -19,6 +23,8 @@ const darkMode = () => {
       headerImg.setAttribute('src', headerImg.getAttribute('data-src-dark'));
       heroImg.setAttribute('src', heroImg.getAttribute('data-src-dark'));
       heroImgMedical.setAttribute('src', heroImgMedical.getAttribute('data-src-dark'));
+      consultationImg.setAttribute('src', consultationImg.getAttribute('data-src-dark'));
+      appointmentImg.setAttribute('src', appointmentImg.getAttribute('data-src-dark'));
       darkModeToggleBtn.style.display = 'block';
       lightModeToggleBtn.style.display = 'none';
     } else {
@@ -29,6 +35,8 @@ const darkMode = () => {
       headerImg.setAttribute('src', originalSrc);
       heroImg.setAttribute('src', herooriginalSrc);
       heroImgMedical.setAttribute('src', heroMedicaloriginalSrc);
+      consultationImg.setAttribute('src', consultationImgoriginalSrc);
+      appointmentImg.setAttribute('src', appointmentImgoriginalSrc);
       darkModeToggleBtn.style.display = 'none';
       lightModeToggleBtn.style.display = 'block';
     }
@@ -43,6 +51,8 @@ const darkMode = () => {
     headerImg.setAttribute('src', originalSrc);
     heroImg.setAttribute('src', herooriginalSrc);
     heroImgMedical.setAttribute('src', heroMedicaloriginalSrc);
+    consultationImg.setAttribute('src', consultationImgoriginalSrc);
+    appointmentImg.setAttribute('src', appointmentImgoriginalSrc);
     document.body.style.backgroundImage = "var(--background-image-light)";
   } else {
     darkModeToggleBtn.style.display = 'block';
@@ -51,6 +61,8 @@ const darkMode = () => {
     headerImg.setAttribute('src', headerImg.getAttribute('data-src-dark'));
     heroImg.setAttribute('src', heroImg.getAttribute('data-src-dark'));
     heroImgMedical.setAttribute('src', heroImgMedical.getAttribute('data-src-dark'));
+    consultationImg.setAttribute('src', consultationImg.getAttribute('data-src-dark'));
+    appointmentImg.setAttribute('src', appointmentImg.getAttribute('data-src-dark'));
     document.body.style.backgroundImage = "var(--background-image-dark)";
   }
 

@@ -1,0 +1,49 @@
+.consultation{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.consultation-wrapper{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'image1 content1';
+    place-items: center;
+    /* grid-gap: 1em; */
+}
+
+.consultation-img-wrapper{
+    grid-area: image1;
+}
+
+.consultation-content{
+    grid-area: content1;
+    margin: 2rem;
+}
+
+.consultation-heading{
+    font-size: var(--size-5xl);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.consultation-description{
+    font-size: var(--size-xl);
+    text-align: left;
+}
+
+.consultation-btn{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.consultation-btn p{
+    font-size: var(--size-xl);
+}
+
+.consultation-btn a{
+    font-size: var(--size-xl);
+}

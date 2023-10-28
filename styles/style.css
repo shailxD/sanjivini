@@ -4,6 +4,7 @@
     --clr-blue: #4751ee;
     --clr-rose: #ff669d;
     --clr-bluelight: #182071;
+    --clr-roseblue: #ff669d;
     --clr-lightbtn: #ffffff;
     --clr-lightbtn50: rgba(255,255,255,0.5);
     --clr-lightbtn25: rgba(255,255,255,0.25);
@@ -46,6 +47,7 @@ html{
     --clr-blue: #4751ee;
     --clr-rose: #4751ee;
     --clr-bluelight: #ffffff;
+    --clr-roseblue: #4751ee;
     --clr-lightbtn: #4751ee;
     --clr-lightbtn50: rgba(71, 81, 238, 0.5);
     --clr-lightbtn25: rgba(71, 81, 238, 0.25);
@@ -94,7 +96,7 @@ a{
 }
 
 strong{
-    color: var(--clr-blue);
+    color: var(--clr-roseblue);
 }
 
 
