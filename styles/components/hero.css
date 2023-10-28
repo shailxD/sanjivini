@@ -31,7 +31,8 @@
 }
 
 .hero_subheading{
-    font-size: var(--size-5xl);
+    font-size: var(--size-3xl);
+    margin-bottom: .3em;
 }
 
 .hero_heading{
@@ -41,23 +42,35 @@
 }
 
 .hero_part1,
-.hero_part2,
-.hero_part4{
-    padding: 1.5rem;
-}
-
-.hero_part1,
 .hero_part2{
+    margin: 2rem 2rem 0 2rem;
+    padding: 1.5rem;
     justify-self: left;
     align-self: flex-start;
 }
 
+.hero_part2{
+    border-radius: 2rem;
+    color: var(--clr-bluelight);
+    background-color: var(--clr-lightbtn);
+}
+
+.hero_part3{
+    size: fixed;
+}
+
 .hero_part4{
+    padding: 1.5rem;
     justify-self: right;
     align-self: flex-start;
 }
 
-.hero_location{
+.hero_medicalcross{
+    width: 65px;
+    height: 65px;
+}
+
+/* .hero_location{
     font-size: var(--size-xl);
     font-weight: 600;
     text-decoration: none;
@@ -66,10 +79,18 @@
     padding: 0.5em 1em;
     border-radius: 6px;
     transition: background-color 0.3s, color 0.3a;
-}
+} */
 
 .hero_address{
     font-size: var(--size-xl);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.03em;
+    background-color: var(--clr-lightbtn);
+    color: var(--clr-bluelight);
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3a;
 }
 
 .hero_part4_wrapper{

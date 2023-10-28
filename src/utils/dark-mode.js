@@ -3,9 +3,11 @@ const darkMode = () => {
   const lightModeToggleBtn = document.querySelector('#theme-toggle-light');
   const headerImg = document.querySelector('.header__img');
   const heroImg = document.querySelector('.hero__img');
+  const heroImgMedical = document.querySelector('.hero_medicalcross');
   const theme = localStorage.getItem('theme');
   const originalSrc = headerImg.getAttribute('src');
   const herooriginalSrc = heroImg.getAttribute('src');
+  const heroMedicaloriginalSrc = heroImgMedical.getAttribute('src');
 
   // Function to toggle the theme
   const toggleTheme = () => {
@@ -16,6 +18,7 @@ const darkMode = () => {
       document.body.style.backgroundImage = "var(--background-image-dark)";
       headerImg.setAttribute('src', headerImg.getAttribute('data-src-dark'));
       heroImg.setAttribute('src', heroImg.getAttribute('data-src-dark'));
+      heroImgMedical.setAttribute('src', heroImgMedical.getAttribute('data-src-dark'));
       darkModeToggleBtn.style.display = 'block';
       lightModeToggleBtn.style.display = 'none';
     } else {
@@ -25,6 +28,7 @@ const darkMode = () => {
       document.body.style.backgroundImage = "var(--background-image-light)";
       headerImg.setAttribute('src', originalSrc);
       heroImg.setAttribute('src', herooriginalSrc);
+      heroImgMedical.setAttribute('src', heroMedicaloriginalSrc);
       darkModeToggleBtn.style.display = 'none';
       lightModeToggleBtn.style.display = 'block';
     }
@@ -38,6 +42,7 @@ const darkMode = () => {
     // Set image sources for light mode
     headerImg.setAttribute('src', originalSrc);
     heroImg.setAttribute('src', herooriginalSrc);
+    heroImgMedical.setAttribute('src', heroMedicaloriginalSrc);
     document.body.style.backgroundImage = "var(--background-image-light)";
   } else {
     darkModeToggleBtn.style.display = 'block';
@@ -45,6 +50,7 @@ const darkMode = () => {
     // Set image sources for dark mode
     headerImg.setAttribute('src', headerImg.getAttribute('data-src-dark'));
     heroImg.setAttribute('src', heroImg.getAttribute('data-src-dark'));
+    heroImgMedical.setAttribute('src', heroImgMedical.getAttribute('data-src-dark'));
     document.body.style.backgroundImage = "var(--background-image-dark)";
   }
 
