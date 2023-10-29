@@ -1,0 +1,55 @@
+.medicine{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.medicine-wrapper{
+    display: grid;
+    grid-template-rows: .3fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'content1 content2'
+    'image1 image1';
+    place-items: center;
+    grid-gap: 2rem;
+}
+
+.medicine-content1{
+    grid-area: content1;
+    margin-top: 2rem;
+}
+
+.medicine-content2{
+    grid-area: content2;
+    /* justify-self: left;
+    align-self: flex-start; */
+}
+
+.medicine-image{
+    grid-area: image1;
+    margin: 0 2rem 0 2rem;
+    padding: 0 13rem 0 13rem;
+}
+
+.medicine-heading{
+    font-size: var(--size-6xl);
+}
+
+.medicine-description{
+    font-size: var(--size-xl);
+}
+
+.medicine-btn{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.medicine p{
+    font-size: var(--size-xl);
+}
+
+.medicine a{
+    font-size: var(--size-xl);
+}

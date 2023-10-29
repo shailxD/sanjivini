@@ -1,0 +1,68 @@
+.lifeline{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.lifeline-wrapper{
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'content2 content1'
+    'content2 image1';
+    place-items: center;
+    grid-gap: 2rem;
+}
+
+.lifeline-content1{
+    grid-area: content1;
+    justify-self: right;
+    align-self: flex-start;
+    margin-top: 2rem;
+}
+
+.lifeline-content2{
+    grid-area: content2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lifeline-image1{
+    grid-area: image1;
+}
+
+.lifeline-content-heading{
+    font-size: var(--size-6xl);
+}
+
+.lifeline-content-description1{
+    font-size: var(--size-xl);
+    margin-top: 2rem;
+}
+    
+.lifeline-content-description2{
+    font-size: var(--size-xl);
+    color: var(--clr-bluelight);
+    background-color: var(--clr-lightbtn);
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+
+.lifeline-medicalcross{
+    margin: 2rem 0 2rem 0;
+    width: 150px;
+    height: 150px;
+}
+
+.lifeline-btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lifeline-btn a,
+.lifeline-btn p{
+    font-size: var(--size-xl);
+}
