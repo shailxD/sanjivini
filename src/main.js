@@ -13,8 +13,10 @@ import '../styles/utils.css';
 import darkMode from './utils/dark-mode'; 
 import loginregister from './utils/login_register';
 import { initializeBackToTopButton } from './utils/backtoTop';
+import popup_components from './utils/pop-component';
 
 darkMode(); // theme toggling function
 loginregister(); // login/register toggling function
 initializeBackToTopButton(); // Back-to-Top function
+popup_components(); //pop-up function
 

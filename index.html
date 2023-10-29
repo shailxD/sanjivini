@@ -6,10 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <meta name="keywords" content="web design, html, css, js" />
     <title>Sanjivini</title>
   </head>
   <body>
+    <!-- NavBar section -->
     <header class="header container">
       <nav class="header__nav"> 
         <a href="#">
@@ -54,6 +57,7 @@
         </ul>
       </nav>
     </header>
+    <!-- pop-up components -->
     <div class="login-wrapper">
       <span class="icon-close">
         <ion-icon name="close"></ion-icon>
@@ -117,6 +121,63 @@
         </form>
       </div>
     </div>
+    <div class="consultation-form-wrapper">
+      <span class="consultation-icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+      <div class="consultation-form-box">
+        <h2>Consultation Details</h2>
+        <form action="#">
+          <div class="consultation-input-form">
+            <span class="consultation-icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" required>
+            <label>Your Name</label>
+          </div>
+          <div class="consultation-input-form">
+            
+            <select name="type" id="consultation-type">
+              <option value="OPD">OPD</option>
+              <option value="General">General</option>
+            </select>
+            <label>Consultation Type</label>
+          </div>
+          <div class="consultation-input-form">
+            <span class="consultation-icon"><ion-icon name="document"></ion-icon></span>
+            <input type="text" required>
+            <label>Select OPD (if applicable)</label>
+          </div>
+          <button type="submit" class="btnlog">Connect to a Doctor</button>
+        </form>
+      </div>
+    </div>
+    <div class="appointment-form-wrapper">
+      <span class="appointment-icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+      <div class="doctor-list">
+        <h2>Available Doctors</h2>
+        <ul>
+            <li>
+                <h3>Dr. Pradeep Bansal</h3>
+                <p>Specialty: Cardiologist</p>
+                <p>Availability: Mon, Wed, Fri (9 AM - 5 PM)</p>
+                <button class="book-appointment">Book Appointment</button>
+            </li>
+            <li>
+              <h3>Dr. Nidhi Gupta</h3>
+              <p>Specialty: Gynecologist</p>
+              <p>Availability: Mon, Tue, Fri (11 AM - 2 PM)</p>
+              <button class="book-appointment">Book Appointment</button>
+            </li>
+            <!-- More doctor entries go here -->
+        </ul>
+      </div>
+      <div class="appointment-calendar">
+          <h2>Appointment Calendar</h2>
+          <div id="calendar"></div>
+      </div>
+    </div>
+    <!-- main body section -->
     <main>
       <section class="hero container">
         <div class="hero_container">
@@ -246,6 +307,7 @@
         </dir>
       </section>
     </main>
+    <!-- footer section -->
     <footer class="footer container section">
       <h3 class="footer__title">~ &copy; Sanjivini, 2023 ~</h3>
     </footer>
@@ -259,7 +321,5 @@
     </div>
 
     <script type="module" src="./src/main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

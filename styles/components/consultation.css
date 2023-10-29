@@ -47,3 +47,118 @@
 .consultation-btn a{
     font-size: var(--size-xl);
 }
+
+/* consultation form */
+
+.consultation-form-wrapper{
+    z-index: 1;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    background-color: var(--clr-bluelight);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.consultation-active-popup{
+    transform: scale(1);
+}
+
+.consultation-form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.consultation-icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: var(--size-2xl);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-lightbtn);
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+    color: var(--clr-dark);
+}
+
+.consultation-form-box h2{
+    font-size: var(--size-3xl);
+    text-align: center;
+}
+
+.consultation-input-form{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--clr-light);
+    margin: 30px 0;
+}
+
+.consultation-input-form label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: var(--size-base);
+    font-weight: 500;
+    pointer-events: none;
+    transition: top 0.3s;
+}
+
+.consultation-input-form input:focus~label,
+.consultation-input-form input:valid~label{
+    top: -5px;
+}
+
+.consultation-input-form input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: var(--size-base);
+    font-weight: 500;
+    color: var(--clr-light);
+    padding: 0 35px 0 5px;
+}
+
+.consultation-input-form .consultation-icon{
+    position: absolute;
+    right: 8px;
+    font-size: var(--size-base);
+    line-height: 57px;
+}
+
+#consultation-type{
+    transform: translateX(330px);
+    border-radius: 6px;
+}
+
+.consultation-btnlog{
+    width: 100%;
+    height: 45px;
+    background-color: var(--clr-lightbtn);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--size-base);
+    color: var(--clr-dark);
+    font-weight: 500;
+}
