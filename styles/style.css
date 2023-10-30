@@ -7,6 +7,7 @@
     --clr-roseblue: #ff669d;
     --clr-lightbtn: #ffffff;
     --clr-bluerose: #4751ee;
+    --clr-yellowred: #fcd53f;
     --clr-lightbtn50: rgba(255,255,255,0.5);
     --clr-lightbtn25: rgba(255,255,255,0.25);
 
@@ -51,6 +52,7 @@ html{
     --clr-roseblue: #4751ee;
     --clr-lightbtn: #4751ee;
     --clr-bluerose: #ff669d;
+    --clr-yellowred: #f8312f;
     --clr-lightbtn50: rgba(71, 81, 238, 0.5);
     --clr-lightbtn25: rgba(71, 81, 238, 0.25);
 }

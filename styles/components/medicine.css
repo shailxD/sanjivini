@@ -53,3 +53,158 @@
 .medicine a{
     font-size: var(--size-xl);
 }
+
+/* medicine form */
+
+.medicine-form-wrapper{
+    z-index: 9999;
+    position: fixed;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 55vw;
+    height: 90vh;
+    background-color: var(--clr-bluelight);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.3s ease, background-color 0.3s ease;    
+}
+
+.medicine-active-popup{
+    transform: scale(1);
+}
+
+.medicine-icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: var(--size-2xl);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-lightbtn);
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+    color: var(--clr-dark);
+}
+
+.medicine-form-box{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'content1 content2'
+    'content1 content2';
+    place-items: center;
+    grid-gap: 3rem;
+}
+
+.medicine-search-list-cart{
+    grid-area: content1;
+}
+
+.medicine-cart-payment{
+    grid-area: content2;
+}
+
+.medicine-search,
+.medicine-list,
+.shopping-cart,
+.payment{
+    margin: 2rem 0 2rem 0;
+}
+
+.medicine-search h2,
+.medicine-list h2,
+.shopping-cart h2,
+.payment h2{
+    font-size: var(--size-3xl);
+    text-align: start;
+    margin-bottom: 1rem;
+    align-self: start;
+}
+
+.add-to-cart,
+.search-button,
+.checkout-button,
+.submit-button{
+    width: 100%;
+    height: 45px;
+    background-color: var(--clr-lightbtn);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--size-base);
+    color: var(--clr-dark);
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.form-group{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--clr-light);
+    margin: 30px 0;
+}
+
+.payment .form-group label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: var(--size-base);
+    font-weight: 500;
+    pointer-events: none;
+    transition: top 0.3s;
+}
+
+.payment .form-group input:focus~label,
+.payment .form-group input:valid~label{
+    top: -5px;
+}
+
+.payment .form-group input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: var(--size-base);
+    font-weight: 500;
+    color: var(--clr-light);
+    padding: 0 35px 0 5px;
+}
+
+#medicine-search{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    overflow: hidden;
+    caret-color: black;
+    border: 1px solid var(--clr-light);
+}
+
+.form-group .icon{
+    position: absolute;
+    right: 8px;
+    font-size: var(--size-base);
+    line-height: 57px;
+}

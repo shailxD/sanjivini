@@ -177,6 +177,110 @@
           <div id="calendar"></div>
       </div>
     </div>
+    <div class="lifeline-form-wrapper">
+      <span class="lifeline-icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+      <div class="blood-search">
+        <h2>Search for Blood</h2>
+        <div class="blood-search-input">
+          <select id="blood-type" name="blood-type">
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+          </select>
+          <label for="blood-type">Select Blood Type</label>
+        </div>
+        <button id="search-blood" class="search-button">Search</button>
+      </div>
+      <div class="blood-request">
+          <h2>Request Blood</h2>
+          <form>
+              <div class="form-group">
+                  <span class="icon"><ion-icon name="person"></ion-icon></span>
+                  <input type="text" id="name" name="name" required>
+                  <label for="name">Your Name</label>
+              </div>
+              <div class="form-group">
+                  <span class="icon"><ion-icon name="location"></ion-icon></span>
+                  <input type="text" id="address" name="address" required>
+                  <label for="address">Delivery Address</label>
+              </div>
+              <button id="request-blood" class="request-button">Submit Request</button>
+          </form>
+      </div>
+      <div class="blood-list">
+        <div class="blood-list-wrapper">
+          <h2>Available Blood</h2>
+          <ul>
+              <li>
+                  <h3>Blood Type: A+</h3>
+                  <p>Available Units: 5</p>
+              </li>
+              <!-- Add more blood type entries here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="medicine-form-wrapper">
+      <span class="medicine-icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+      <div class="medicine-form-box">
+        <div class="medicine-search-list-cart">
+          <section class="medicine-search">
+            <h2>Search for Medicines</h2>
+            <input type="text" id="medicine-search" placeholder="Search for medicines">
+            <button id="search-medicine" class="search-button">Search</button>
+          </section>  
+          <section class="medicine-list">
+              <h2>Available Medicines</h2>
+              <div>
+                  <h3>Medicine Name: Aspirin</h3>
+                  <p>Price: $5.99</p>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <!-- Add more medicine entries here -->
+          </section>
+          <section class="shopping-cart">
+            <h2>Your Shopping Cart</h2>
+            <ul id="cart">
+                <!-- Cart items go here -->
+            </ul>
+            <p>Total: $<span id="total-amount">0.00</span></p>
+            <button id="checkout" class="checkout-button">Checkout</button>
+          </section>
+        </div>
+        <div class="medicine-cart-payment">
+          <section class="payment">
+              <h2>Payment Information</h2>
+              <form>
+                  <div class="form-group">
+                    <span class="icon"><ion-icon name="card"></ion-icon></span>
+                    <input type="text" id="card-number" name="card-number" required>  
+                    <label for="card-number">Card Number</label>
+                  </div>
+                  <div class="form-group">
+                    <span class="icon"><ion-icon name="calendar"></ion-icon></span>
+                    <input type="text" id="expiry-date" name="expiry-date" required>  
+                    <label for="expiry-date">Expiry Date</label>
+                  </div>
+                  <div class="form-group">
+                    <span class="icon"><ion-icon name="id-card"></ion-icon></span>
+                    <input type="text" id="cvv" name="cvv" required>  
+                    <label for="cvv">CVV</label>
+                  </div>
+                  <button id="submit-order" class="submit-button">Submit Order</button>
+              </form>
+          </section>
+        </div>
+      </div>
+    </div>
     <!-- main body section -->
     <main>
       <section class="hero container">

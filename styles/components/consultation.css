@@ -51,12 +51,16 @@
 /* consultation form */
 
 .consultation-form-wrapper{
-    z-index: 1;
+    z-index: 9999;
     position: fixed;
     left: 0; 
-    right: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 500px;
     height: 500px;
     background-color: var(--clr-bluelight);
@@ -148,6 +152,7 @@
 #consultation-type{
     transform: translateX(330px);
     border-radius: 6px;
+    padding: 2px;
 }
 
 .consultation-btnlog{

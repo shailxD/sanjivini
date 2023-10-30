@@ -66,3 +66,155 @@
 .lifeline-btn p{
     font-size: var(--size-xl);
 }
+
+/* lifeline form */
+
+.lifeline-form-wrapper{
+    z-index: 9999;
+    position: fixed;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 500px;
+    height: 720px;
+    background-color: var(--clr-bluelight);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.3s ease, background-color 0.3s ease;    
+}
+
+.lifeline-active-popup{
+    transform: scale(1);
+}
+
+.blood-search,
+.blood-request,
+.blood-list{
+    width: 100%;
+    padding:  15px 40px 10px 40px;
+}
+
+.blood-search h2,
+.blood-request h2,
+.blood-list h2{
+    font-size: var(--size-3xl);
+    text-align: center;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+.lifeline-icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: var(--size-2xl);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-lightbtn);
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+    color: var(--clr-dark);
+}
+
+.blood-search-input,
+.blood-request .form-group{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--clr-light);
+    margin: 30px 0;
+}
+
+.blood-search-input label,
+.blood-request .form-group label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: var(--size-base);
+    font-weight: 500;
+    pointer-events: none;
+    transition: top 0.3s;
+}
+
+.blood-request .form-group input:focus~label,
+.blood-request .form-group input:valid~label{
+    top: -5px;
+}
+
+.blood-request .form-group input,
+.blood-request .form-group textarea{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: var(--size-base);
+    font-weight: 500;
+    color: var(--clr-light);
+    padding: 0 35px 0 5px;
+}
+
+.blood-search .search-button,
+.blood-request .request-button{
+    width: 100%;
+    height: 45px;
+    background-color: var(--clr-lightbtn);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--size-base);
+    color: var(--clr-dark);
+    font-weight: 500;
+}
+
+#blood-type{
+    transform: translateX(355px);
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.blood-list ul li h3,
+.blood-list ul li p{
+    font-size: var(--size-xl);
+    font-weight: 700;
+}
+
+.blood-list-wrapper{
+    color: var(--clr-dark);
+    background-color: var(--clr-yellowred);
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+
+.blood-list-wrapper ul{
+    padding: 0;
+}
+.blood-list-wrapper ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blood-request .form-group .icon{
+    position: absolute;
+    right: 8px;
+    font-size: var(--size-base);
+    line-height: 57px;
+}
