@@ -1,6 +1,6 @@
 const darkMode = () => {
-  const darkModeToggleBtn = document.querySelector('#theme-toggle-dark');
-  const lightModeToggleBtn = document.querySelector('#theme-toggle-light');
+  const darkModeToggleBtn = document.querySelector('.theme-toggle-dark');
+  const lightModeToggleBtn = document.querySelector('.theme-toggle-light');
   const headerImg = document.querySelector('.header__img');
   const heroImg = document.querySelector('.hero__img');
   const heroImgMedical = document.querySelector('.hero_medicalcross');
