@@ -92,7 +92,7 @@
         color: var(--clr-blue);
     }
     
-    .header__getstart{
+    .header__signout{
         font-size: var(--size-xs);
     }
 
@@ -117,7 +117,7 @@
         height: var(--size-xl); 
     }
 
-    .header__getstart{
+    .header__signout{
         font-size: var(--size-sm);
     }
 }
@@ -134,7 +134,7 @@
         height: var(--size-2xl); 
     }
 
-    .header__getstart{
+    .header__signout{
         font-size: var(--size-base);
     }
 }

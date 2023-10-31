@@ -143,6 +143,10 @@ body::-webkit-scrollbar-thumb {
     color: #ffffff;
 }
 
+.MainWebsite{
+    display: none;
+}
+
 
 /* xs */
 /* @media (min-width: 475px) {} */

@@ -1,6 +1,7 @@
 const darkMode = () => {
   const darkModeToggleBtn = document.querySelector('.theme-toggle-dark');
   const lightModeToggleBtn = document.querySelector('.theme-toggle-light');
+  const login_Img = document.querySelector('.login-image-IMG');
   const headerImg = document.querySelector('.header__img');
   const heroImg = document.querySelector('.hero__img');
   const heroImgMedical = document.querySelector('.hero_medicalcross');
@@ -11,6 +12,7 @@ const darkMode = () => {
   const medicineImg = document.querySelector('.medicineIMG');
   const theme = localStorage.getItem('theme');
   const originalSrc = headerImg.getAttribute('src');
+  const login_ImgoriginalSrc = login_Img.getAttribute('src');
   const herooriginalSrc = heroImg.getAttribute('src');
   const heroMedicaloriginalSrc = heroImgMedical.getAttribute('src');
   const consultationImgoriginalSrc = consultationImg.getAttribute('src');
@@ -27,6 +29,7 @@ const darkMode = () => {
       localStorage.setItem('theme', 'dark-mode');
       document.body.style.backgroundImage = "var(--background-image-dark)";
       headerImg.setAttribute('src', headerImg.getAttribute('data-src-dark'));
+      login_Img.setAttribute('src', login_Img.getAttribute('data-src-dark'));
       heroImg.setAttribute('src', heroImg.getAttribute('data-src-dark'));
       heroImgMedical.setAttribute('src', heroImgMedical.getAttribute('data-src-dark'));
       consultationImg.setAttribute('src', consultationImg.getAttribute('data-src-dark'));
@@ -42,6 +45,7 @@ const darkMode = () => {
       localStorage.setItem('theme', 'light-mode');
       document.body.style.backgroundImage = "var(--background-image-light)";
       headerImg.setAttribute('src', originalSrc);
+      login_Img.setAttribute('src', login_ImgoriginalSrc);
       heroImg.setAttribute('src', herooriginalSrc);
       heroImgMedical.setAttribute('src', heroMedicaloriginalSrc);
       consultationImg.setAttribute('src', consultationImgoriginalSrc);
@@ -61,6 +65,7 @@ const darkMode = () => {
     darkModeToggleBtn.style.display = 'none';
     // Set image sources for light mode
     headerImg.setAttribute('src', originalSrc);
+    login_Img.setAttribute('src', login_ImgoriginalSrc);
     heroImg.setAttribute('src', herooriginalSrc);
     heroImgMedical.setAttribute('src', heroMedicaloriginalSrc);
     consultationImg.setAttribute('src', consultationImgoriginalSrc);
@@ -74,6 +79,7 @@ const darkMode = () => {
     lightModeToggleBtn.style.display = 'none';
     // Set image sources for dark mode
     headerImg.setAttribute('src', headerImg.getAttribute('data-src-dark'));
+    login_Img.setAttribute('src', login_Img.getAttribute('data-src-dark'));
     heroImg.setAttribute('src', heroImg.getAttribute('data-src-dark'));
     heroImgMedical.setAttribute('src', heroImgMedical.getAttribute('data-src-dark'));
     consultationImg.setAttribute('src', consultationImg.getAttribute('data-src-dark'));
