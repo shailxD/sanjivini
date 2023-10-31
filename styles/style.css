@@ -41,6 +41,7 @@
 
 html{
     scroll-behavior: smooth; 
+    cursor: none;
 }
 
 .light-mode{
@@ -147,6 +148,13 @@ body::-webkit-scrollbar-thumb {
     display: none;
 }
 
+/* custom cursor  for small screens*/
+.cursor-dot,
+.cursor-outline{
+    display: none;
+}
+/* end of custom cursor */
+
 
 /* xs */
 /* @media (min-width: 475px) {} */
@@ -158,7 +166,29 @@ body::-webkit-scrollbar-thumb {
 /* @media (min-width: 768px) {} */
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+    .cursor-dot {
+        width: 6px;
+        height: 6px;
+        background-color: var(--clr-light);
+        position: fixed;
+        border-radius: 50%;
+        z-index: 999999;
+        pointer-events: none;
+        transform: translate(-50%, -50%); /* Center the cursor dot */
+    }
+    
+    .cursor-outline {
+        width: 30px;
+        height: 30px;
+        border: 2px solid var(--clr-light);
+        position: fixed;
+        border-radius: 50%;
+        z-index: 999998; /* Place it behind the cursor dot */
+        pointer-events: none;
+        transform: translate(-50%, -50%); /* Center the cursor outline */
+    }
+}
 
 /* xl */
 /* @media (min-width: 1280px) {} */
